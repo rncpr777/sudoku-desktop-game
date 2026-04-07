@@ -70,7 +70,7 @@ This project requires the following dependencies:
 -   JDK >21: Minimum version required for running the application.
 -   JavaFX >22: for building the graphical user interface.
 -   Maven >3.9: for project management and building.
--   JOOQ: for database interactions.
+-   JOOQ: >3.19.9: for database interactions.
 -   SQLite: as the database to store Sudoku boards.
 -   SLF4J and Logback: for logging purposes.
 
