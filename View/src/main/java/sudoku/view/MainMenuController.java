@@ -1,5 +1,16 @@
 package sudoku.view;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Paths;
+import java.util.Collections;
+import java.util.List;
+import java.util.ResourceBundle;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -15,21 +26,11 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.SkinBase;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import sudoku.dao.exceptions.SudokuReadException;
 import sudoku.dao.factories.SudokuBoardDaoFactory;
 import sudoku.dao.interfaces.Dao;
 import sudoku.jdbcdao.JdbcSudokuBoardDao;
 import sudoku.model.models.SudokuBoard;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.nio.file.Paths;
-import java.util.Collections;
-import java.util.List;
-import java.util.ResourceBundle;
 
 public class MainMenuController implements Initializable {
     public MainMenuController() {
